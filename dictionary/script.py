@@ -27,6 +27,7 @@ while True:
     try:
         for k in dict:
             if key in k:
+                print('')
                 print(k + ': ', dict[k])
                 print('=====================')
     except:
