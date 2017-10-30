@@ -33,7 +33,7 @@ for x in list:
     # dict[key_val[0]] = key_val[1]
     val = x.strip()
     #print 'val is: ', val
-    match = re.search(r'(.*) - (.*)', val)
+    match = re.search(r'(.*) - (.*)', val, re.U)
     if match:
         dict[match.group(1)] = match.group(2)
     else:
@@ -42,14 +42,17 @@ for x in list:
 #print dict
 
 while True:
+    print('')
     print('////////////////////////////////////////////////////')
-    print("Enter the request:\n")
+    print("Enter the request:")
     key = raw_input()
     try:
         for k in dict:
             if key in k:
                 print('')
-                print k + ': ', dict[k]
+                #print k + ': ', dict[k]
+                print 'key: ', k
+                print 'value: ', dict[k]
                 print('=====================')
     except:
         print('Nothing found in dictionary for ' + key)
