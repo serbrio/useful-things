@@ -46,6 +46,7 @@ for x in list:
 
 while True:
     print('')
+    print('')
     print("//////////////////////////////////////////////////////////////////////////////////////")
     print("////////Enter the request://///////////////////////")
     key = raw_input().strip()  #Need to add processing of input from Windows OS - there must be some bugs
@@ -63,7 +64,7 @@ while True:
                 #    if k in i:
                 #        print('from list:')
                 #        print(i)
-        print("//////////Found " + str(n) + " matches./////////////")
+        print("////////Found " + str(n) + " matches for _" + str(key) + "_.///////////")
         print("//////////////////////////////////////////////////////////////////////////////////////")
     except:
         print('Nothing found in dictionary for ' + key)
