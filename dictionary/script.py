@@ -49,7 +49,8 @@ while True:
     print('////////////////////////////////////////////////////'
           '///////////////////////////////////////////////////')
     print("Enter the request:")
-    key = raw_input().strip()
+    key = raw_input().strip()  #Need to add processing of input from Windows OS - there must be some bugs
+    n = 0
     try:
         for k in dict:
             if key in k:
@@ -58,10 +59,12 @@ while True:
                 print 'key: ', k
                 print 'value: ', dict[k]
                 print('=====================')
+                n += 1
                 #for i in list:
                 #    if k in i:
                 #        print('from list:')
                 #        print(i)
+        print('Found ' + str(n) + ' matches.')
     except:
         print('Nothing found in dictionary for ' + key)
         print(':(')
