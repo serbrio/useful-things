@@ -31,8 +31,15 @@ for x in list:
         val_u = unicode(val)
         dict[val_u] = ''
 
+print('')
+print('/////////////////////////////////////////////////////////')
+print("///Hi! This is a NL-RU dictionary.///////////////////////")
+print("///Search in NL words only available at the moment.//////")
+print("///So there is no sense to look for words in Cyrillic.///")
+print('///(Input "exit()", if you want to escape.)//////////////')
+print('/////////////////////////////////////////////////////////')
+
 while True:
-    print('')
     print('')
     print('')
     print('')
@@ -42,6 +49,8 @@ while True:
         key = raw_input().strip()
         print("//////////////////////////////////////////////////////////////////////////////////////")
         key_u = unicode(key)
+        if key_u == 'exit()':
+            break
         n = 0
         for k in dict:
             if key_u in k:
@@ -50,10 +59,11 @@ while True:
                 print('=====================')
                 n += 1
         print("//////////////////////////////////////////////////////////////////////////////////////")
-        print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.///////////")
+        print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.")
         print("//////////////////////////////////////////////////////////////////////////////////////")
     except:
-        print('Nothing found in dictionary for _' + key_u + '_.')
+        print('////////Nothing found in dictionary for _' + key_u + '_.')
         print(':(')
+        print('////////(Input "exit()", if you want to escape.)')
         print("//////////////////////////////////////////////////////////////////////////////////////")
 
