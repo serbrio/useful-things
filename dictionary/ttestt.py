@@ -10,21 +10,11 @@
 """
 
 import re
-#import codecs
 import io
 import sys
-reload(sys)
-import locale
-
-sys.setdefaultencoding(locale.getpreferredencoding())
-
-#file = open('NL-RU-A.txt', 'r')
-#list = file.readlines()
-#file.close()
-
-#file = codecs.open('NL-RU-A.txt', 'r', 'utf_8_sig')
-#list = file.readlines()
-#file.close()
+#reload(sys)
+#import locale
+#sys.setdefaultencoding(locale.getpreferredencoding())
 
 list = []
 with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
@@ -42,8 +32,6 @@ for x in list:
     else:
         val_u = unicode(val)
         dict[val_u] = ''
-
-#print dict
 
 while True:
     print('')
@@ -63,8 +51,8 @@ while True:
                 #print k + ': ', dict[k]
                 #print('key: ', k.encode('utf-8', 'ignore'))
                 #print(dict[k].encode('cp866', 'ignore'))
-                print('key: ' + k)
-                print('value: ' + dict[k])
+                print('key: ' + k.encode(sys.stdout.encoding, 'ignore'))
+                print('value: ' + dict[k].encode(sys.stdout.encoding, 'ignore'))
                 print('=====================')
                 n += 1
                 #for i in list:
