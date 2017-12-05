@@ -12,9 +12,7 @@
 import re
 import io
 import sys
-#reload(sys)
-#import locale
-#sys.setdefaultencoding(locale.getpreferredencoding())
+
 
 list = []
 with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
@@ -40,30 +38,22 @@ while True:
     print('')
     print("//////////////////////////////////////////////////////////////////////////////////////")
     print("////////Enter the request://///////////////////////")
-    key = raw_input().strip()  #Need to add processing of input from Windows OS - there must be some bugs
-    print("//////////////////////////////////////////////////////////////////////////////////////")
-    key_u = unicode(key)
-    n = 0
-    #try:
-    for k in dict:
+    try:
+        key = raw_input().strip()
+        print("//////////////////////////////////////////////////////////////////////////////////////")
+        key_u = unicode(key)
+        n = 0
+        for k in dict:
             if key_u in k:
-                #print('')
-                #print k + ': ', dict[k]
-                #print('key: ', k.encode('utf-8', 'ignore'))
-                #print(dict[k].encode('cp866', 'ignore'))
                 print('key: ' + k.encode(sys.stdout.encoding, 'ignore'))
                 print('value: ' + dict[k].encode(sys.stdout.encoding, 'ignore'))
                 print('=====================')
                 n += 1
-                #for i in list:
-                #    if k in i:
-                #        print('from list:')
-                #        print(i)
-    print("//////////////////////////////////////////////////////////////////////////////////////")
-    print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.///////////")
-    print("//////////////////////////////////////////////////////////////////////////////////////")
-    #except:
-    #    print('Nothing found in dictionary for _' + key_u + '_.')
-    #    print(':(')
-    #    print("//////////////////////////////////////////////////////////////////////////////////////")
+        print("//////////////////////////////////////////////////////////////////////////////////////")
+        print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.///////////")
+        print("//////////////////////////////////////////////////////////////////////////////////////")
+    except:
+        print('Nothing found in dictionary for _' + key_u + '_.')
+        print(':(')
+        print("//////////////////////////////////////////////////////////////////////////////////////")
 
