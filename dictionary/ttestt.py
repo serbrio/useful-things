@@ -27,9 +27,9 @@ for x in list:
     match = pattern.split(val, maxsplit=1)
     if len(match) == 2:
         dict[unicode(match[0])] = unicode(match[1])
-    else:
-        val_u = unicode(val)
-        dict[val_u] = ''
+   #else:
+   #     val_u = unicode(val)
+   #     dict[val_u] = ''
 
 print('')
 print('/////////////////////////////////////////////////////////')
