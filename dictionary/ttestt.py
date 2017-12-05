@@ -14,7 +14,9 @@ import re
 import io
 import sys
 reload(sys)
-sys.setdefaultencoding('utf-8')
+import locale
+
+sys.setdefaultencoding(locale.getpreferredencoding())
 
 #file = open('NL-RU-A.txt', 'r')
 #list = file.readlines()
@@ -41,7 +43,7 @@ for x in list:
         val_u = unicode(val)
         dict[val_u] = ''
 
-print dict
+#print dict
 
 while True:
     print('')
@@ -56,8 +58,10 @@ while True:
             if key_u in k:
                 print('')
                 #print k + ': ', dict[k]
-                print('key: ', k.encode('utf-8', 'ignore'))
-                print(dict[k].encode('cp866', 'ignore'))
+                #print('key: ', k.encode('utf-8', 'ignore'))
+                #print(dict[k].encode('cp866', 'ignore'))
+                print('key: ', k)
+                print(dict[k])
                 print('=====================')
                 n += 1
                 #for i in list:
