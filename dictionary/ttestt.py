@@ -51,6 +51,10 @@ while True:
         key_u = unicode(key)
         if key_u == 'exit()':
             break
+        elif key_u == 'Sashu':
+            print('Hi there, Sashustik! ;)')
+            print('Smile! )')
+            break
         n = 0
         for k in dict:
             if key_u in k:
