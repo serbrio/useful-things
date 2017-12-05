@@ -12,7 +12,9 @@
 import re
 #import codecs
 import io
-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 #file = open('NL-RU-A.txt', 'r')
 #list = file.readlines()
