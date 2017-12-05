@@ -51,7 +51,7 @@ while True:
         key_u = unicode(key)
         if key_u == 'exit()':
             break
-        elif key_u == 'Sashu':
+        elif key_u == 'sashu':
             print('Hi there, Sashustik! ;)')
             print('Smile! )')
             break
