@@ -61,7 +61,7 @@ while True:
                 #print('key: ', k.encode('utf-8', 'ignore'))
                 #print(dict[k].encode('cp866', 'ignore'))
                 print('key: ', k)
-                print(dict[k])
+                print('value: ', dict[k])
                 print('=====================')
                 n += 1
                 #for i in list:
