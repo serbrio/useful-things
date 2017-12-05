@@ -48,26 +48,30 @@ for x in list:
 while True:
     print('')
     print('')
+    print('')
+    print('')
     print("//////////////////////////////////////////////////////////////////////////////////////")
     print("////////Enter the request://///////////////////////")
     key = raw_input().strip()  #Need to add processing of input from Windows OS - there must be some bugs
+    print("//////////////////////////////////////////////////////////////////////////////////////")
     key_u = unicode(key)
     n = 0
     #try:
     for k in dict:
             if key_u in k:
-                print('')
+                #print('')
                 #print k + ': ', dict[k]
                 #print('key: ', k.encode('utf-8', 'ignore'))
                 #print(dict[k].encode('cp866', 'ignore'))
-                print('key: ', k)
-                print(dict[k])
+                print('key: ' + k)
+                print('value: ' + dict[k])
                 print('=====================')
                 n += 1
                 #for i in list:
                 #    if k in i:
                 #        print('from list:')
                 #        print(i)
+    print("//////////////////////////////////////////////////////////////////////////////////////")
     print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.///////////")
     print("//////////////////////////////////////////////////////////////////////////////////////")
     #except:
