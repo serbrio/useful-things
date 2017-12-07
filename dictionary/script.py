@@ -9,65 +9,19 @@
 ...
 """
 
-import re
-#import codecs
-import io
+from Tkinter import *
 
+root = Tk()
 
-#file = open('NL-RU-A.txt', 'r')
-#list = file.readlines()
-#file.close()
+def Hello(event):
+    print "Yet another hello world"
 
-#file = codecs.open('NL-RU-A.txt', 'r', 'utf_8_sig')
-#list = file.readlines()
-#file.close()
+btn = Button(root,                  #родительское окно
+             text="Click me",       #надпись на кнопке
+             width=30,height=5,     #ширина и высота
+             bg="white",fg="black") #цвет фона и надписи
+btn.bind("<Button-1>", Hello)       #при нажатии ЛКМ на кнопку вызывается функция Hello
+btn.pack()                          #расположить кнопку на главном окне
+root.mainloop()
 
-list = []
-with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
-    for line in fi:
-        list.append(line)
-
-dict = {}
-pattern = re.compile(" - ")
-for x in list:
-    #key_val = x.strip().split(r' - ')
-    # dict[key_val[0]] = key_val[1]
-    val = x.strip()
-    #print 'val is: ', val
-   ##match = re.search(r"(.*) - (.*)", val, re.U)
-    match = pattern.split(val, maxsplit=1)
-    if len(match) == 2:
-        ##dict[match.group(1)] = match.group(2)
-        dict[match[0]] = match[1]
-    else:
-        dict[val] = ''
-
-#print dict
-
-while True:
-    print('')
-    print('')
-    print("//////////////////////////////////////////////////////////////////////////////////////")
-    print("////////Enter the request://///////////////////////")
-    key = raw_input().strip()  #Need to add processing of input from Windows OS - there must be some bugs
-    n = 0
-    try:
-        for k in dict:
-            if key in k:
-                print('')
-                #print k + ': ', dict[k]
-                print 'key: ', k
-                print 'value: ', dict[k]
-                print('=====================')
-                n += 1
-                #for i in list:
-                #    if k in i:
-                #        print('from list:')
-                #        print(i)
-        print("////////Found " + str(n) + " matches for _" + str(key) + "_.///////////")
-        print("//////////////////////////////////////////////////////////////////////////////////////")
-    except:
-        print('Nothing found in dictionary for ' + key)
-        print(':(')
-        print("//////////////////////////////////////////////////////////////////////////////////////")
 
