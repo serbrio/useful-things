@@ -32,7 +32,7 @@ def SaveFile(ev):
         return
     if not fn.endswith(".txt"):
         fn += ".txt"
-    open(fn, 'wt').write(textbox.get('1.0', 'end'))
+    open(fn, 'wt').write((textbox.get('1.0', 'end')).encode('utf-8'))
 
 
 root = Tk()
