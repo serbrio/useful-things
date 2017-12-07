@@ -12,6 +12,8 @@
 from Tkinter import *
 import tkFileDialog
 
+import dict_creator
+
 
 def Quit(ev):
     global root
@@ -39,18 +41,22 @@ root = Tk()
 
 panelFrame = Frame(root, height=60, bg='gray')
 textFrame = Frame(root, height=340, width=600)
+searchboxFrame = Frame(root, height=60, bg='gray')
 
 panelFrame.pack(side='top', fill='x')
 textFrame.pack(side='bottom', fill='both', expand=1)
+searchboxFrame.pack(side='top', fill='x')
 
 textbox = Text(textFrame, font='Arial 14', wrap='word')
 scrollbar = Scrollbar(textFrame)
+searchbox = Entry(searchboxFrame)
 
 scrollbar['command'] = textbox.yview
 textbox['yscrollcommand'] = scrollbar.set
 
 textbox.pack(side='left', fill='both', expand=1)
 scrollbar.pack(side='right', fill='y')
+searchbox.pack(side='left', fill='both', expand=1)
 
 loadBtn = Button(panelFrame, text='Load')
 saveBtn = Button(panelFrame, text='Save')
