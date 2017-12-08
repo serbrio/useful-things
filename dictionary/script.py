@@ -61,9 +61,10 @@ textFrame.pack(side='bottom', fill='both', expand=1)
 
 
 searchInvitation = Label(searchboxFrame, text="Search: ", font='Arial 14')
-searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='dot', font='Arial 14', )
+searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='dot', font='Arial 14')
 searchInvitation.pack(side=LEFT)
 searchbox.pack(side=RIGHT, fill='both', expand=1)
+searchbox.bind("<KeyRelease>", Find)
 
 textbox = Text(textFrame, font='Arial 14', wrap='word')
 scrollbar = Scrollbar(textFrame)
@@ -84,6 +85,7 @@ findBtn = Button(panelFrame, text='Find')
 saveBtn.bind("<Button-1>", SaveFile)
 quitBtn.bind("<Button-1>", Quit)
 findBtn.bind("<Button-1>", Find)
+
 
 #loadBtn.place(x=10, y=10, width=40, height=40)
 findBtn.place(x=10, y=10, width=40, height=40)
