@@ -51,24 +51,29 @@ def Find(ev):
 
 root = Tk()
 
+searchboxFrame = Frame(root)
 panelFrame = Frame(root, height=60, bg='gray')
 textFrame = Frame(root, height=340, width=600)
-searchboxFrame = Frame(root, height=40, width= 600, bg='green')
 
+searchboxFrame.pack(side='top', fill='both')
 panelFrame.pack(side='top', fill='x')
 textFrame.pack(side='bottom', fill='both', expand=1)
-searchboxFrame.pack(side='top', fill='x')
+
+
+searchInvitation = Label(searchboxFrame, text="Search: ", font='Arial 14')
+searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='dot', font='Arial 14', )
+searchInvitation.pack(side=LEFT)
+searchbox.pack(side=RIGHT, fill='both', expand=1)
 
 textbox = Text(textFrame, font='Arial 14', wrap='word')
 scrollbar = Scrollbar(textFrame)
-searchbox = Entry(searchboxFrame)
+
 
 scrollbar['command'] = textbox.yview
 textbox['yscrollcommand'] = scrollbar.set
 
 textbox.pack(side='left', fill='both', expand=1)
 scrollbar.pack(side='right', fill='y')
-searchbox.pack(side='left', fill='both', expand=1)
 
 #loadBtn = Button(panelFrame, text='Load')
 saveBtn = Button(panelFrame, text='Save to file')
@@ -82,8 +87,8 @@ findBtn.bind("<Button-1>", Find)
 
 #loadBtn.place(x=10, y=10, width=40, height=40)
 findBtn.place(x=10, y=10, width=40, height=40)
-saveBtn.place(x=80, y=10, width=80, height=40)
-quitBtn.place(x=170, y=10, width=40, height=40)
+saveBtn.place(x=760, y=10, width=80, height=40)
+quitBtn.place(x=850, y=10, width=40, height=40)
 
 root.mainloop()
 
