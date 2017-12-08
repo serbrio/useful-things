@@ -43,8 +43,13 @@ def Find(ev):
     textbox.delete('1.0', END)
     ent = (searchbox.get()).encode('utf-8')
     result, n = dict_creator.d_searcher(ent, dict_creator.d_creator())
+    #textbox.tag_config("keyWord", background="yellow", foreground="blue")
     for i in result:
+        #start_idx = textbox.index(END)
         textbox.insert(END, i[0])
+        #end_idx = textbox.index(END)
+        #textbox.tag_add('keyWord', start_idx, end_idx)
+        #textbox.tag_config('keyWord', background="yellow", foreground="blue")
         textbox.insert(END, '\n')
         textbox.insert(END, i[1])
         textbox.insert(END, '\n')
@@ -66,12 +71,12 @@ textFrame.pack(side='bottom', fill='both', expand=1)
 
 
 searchInvitation = Label(searchboxFrame, text="Search: ", font='Arial 14')
-searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='dot', font='Arial 14')
+searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='arrow', font='Arial 14')
 searchInvitation.pack(side=LEFT)
 searchbox.pack(side=RIGHT, fill='both', expand=1)
 searchbox.bind("<KeyRelease>", Find)
 
-resultSum = Label(textFrame, textvariable=textVar, fg='blue')
+resultSum = Label(textFrame, textvariable=textVar, fg='blue', cursor='dot')
 resultSum.pack(side=BOTTOM, fill='both', expand=1)
 
 textbox = Text(textFrame, font='Arial 14', wrap='word')

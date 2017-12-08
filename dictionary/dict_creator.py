@@ -45,9 +45,8 @@ def d_searcher(entry, dict):
     else:
         return [(('Nothing found in dictionary for __' + key + '__.'), '')], n
 
-def main():
-    d_creator()
 
 
-if __name__ == '__main__':
-    main()
+
+#if __name__ == '__main__':
+#    d_creator()
