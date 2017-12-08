@@ -30,7 +30,6 @@ def d_creator():
           dict[unicode(match[0])] = unicode(match[1])
           #add check, if the dict[unicode(match[0])] is already used, 
           #if so -> add new key to dict
-    #need to sort dict!
     return dict
 
 def d_searcher(entry, dict):
@@ -39,15 +38,17 @@ def d_searcher(entry, dict):
     key = entry.strip()
     #ignore uppercase
     for k in dict:
-        if key in k:
+        if key in k: 
             ke = k.encode('utf-8', 'ignore')
             va = dict[k].encode('utf-8', 'ignore')
             search_result.append((ke, va))
             n += 1
     if search_result:
-        return search_result, n
+        #if first word ('word ') fully matches key (the request), 
+        #put it in the top of the search_result list
+        return sorted(search_result), n
     else:
-        return [(('Nothing found in dictionary for __' + key + '__.'), '')], n
+        return [(('Nothing found in dictionary for "' + key + '".'), '')], n
 
 
 
