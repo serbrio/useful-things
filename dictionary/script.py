@@ -11,7 +11,6 @@
 
 from Tkinter import *
 import tkFileDialog
-
 import dict_creator
 
 
@@ -36,6 +35,10 @@ def SaveFile(ev):
         fn += ".txt"
     open(fn, 'wt').write((textbox.get('1.0', 'end')).encode('utf-8'))
 
+def ResultText(request, count):
+    txt = 'Found ' + str(count) + ' matches for "' + request + '".'
+    textVar.set(txt)
+
 def Find(ev):
     textbox.delete('1.0', END)
     ent = (searchbox.get()).encode('utf-8')
@@ -47,9 +50,11 @@ def Find(ev):
         textbox.insert(END, '\n')
         textbox.insert(END, '================')
         textbox.insert(END, '\n')
+    ResultText(ent, n)
 
 
 root = Tk()
+textVar = StringVar()
 
 searchboxFrame = Frame(root)
 panelFrame = Frame(root, height=60, bg='gray')
@@ -65,6 +70,9 @@ searchbox = Entry(searchboxFrame, bd=10, fg='blue', cursor='dot', font='Arial 14
 searchInvitation.pack(side=LEFT)
 searchbox.pack(side=RIGHT, fill='both', expand=1)
 searchbox.bind("<KeyRelease>", Find)
+
+resultSum = Label(textFrame, textvariable=textVar, fg='blue')
+resultSum.pack(side=BOTTOM, fill='both', expand=1)
 
 textbox = Text(textFrame, font='Arial 14', wrap='word')
 scrollbar = Scrollbar(textFrame)
