@@ -30,12 +30,14 @@ def d_creator():
           dict[unicode(match[0])] = unicode(match[1])
           #add check, if the dict[unicode(match[0])] is already used, 
           #if so -> add new key to dict
+    #need to sort dict!
     return dict
 
 def d_searcher(entry, dict):
     n = 0
     search_result = []
     key = entry.strip()
+    #ignore uppercase
     for k in dict:
         if key in k:
             ke = k.encode('utf-8', 'ignore')
