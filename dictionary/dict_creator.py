@@ -11,7 +11,7 @@
 
 import re
 import io
-import sys
+#import sys
 
 
 def d_creator():
@@ -31,24 +31,28 @@ def d_creator():
     return dict
 
 def d_searcher(entry, dict):
+    #key = ''
+    n = 0
+    search_result = []
+    key = 'nothing'
     try:
-        n = 0
-        search_result = []
-        key = entry().strip()
-        key_u = unicode(key)
+        #n = 0
+        #search_result = []
+        key = entry.strip()
+        #key_u = unicode(key)
         for k in dict:
-            if key_u in k:
-                key = 'key: ' + k.encode(sys.stdout.encoding, 'ignore')
-                value = 'value: ' + dict[k].encode(sys.stdout.encoding, 'ignore')
+            if key in k:
+                ke = 'key: ' + k.encode('utf-8', 'ignore')
+                va = 'value: ' + dict[k].encode('utf-8', 'ignore')
                 #print('=====================')
-                search_result.append((key, value))
+                search_result.append((ke, va))
                 n += 1
         #print("//////////////////////////////////////////////////////////////////////////////////////")
         #print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.")
         #print("//////////////////////////////////////////////////////////////////////////////////////")
     except:
-        except_message = 'Nothing found in dictionary for _' + key_u + '_.'
-        search_result.append(except_message)
+        except_message = 'Nothing found in dictionary for _' + key + '_.'
+        search_result.append((except_message, '==='))
     return search_result, n
 
 def main():
