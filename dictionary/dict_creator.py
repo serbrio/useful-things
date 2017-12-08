@@ -28,6 +28,8 @@ def d_creator():
       match = pattern.split(val, maxsplit=1)
       if len(match) == 2:
           dict[unicode(match[0])] = unicode(match[1])
+          #add check, if the dict[unicode(match[0])] is already used, 
+          #if so -> add new key to dict
     return dict
 
 def d_searcher(entry, dict):
