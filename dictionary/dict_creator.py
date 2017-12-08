@@ -31,29 +31,19 @@ def d_creator():
     return dict
 
 def d_searcher(entry, dict):
-    #key = ''
     n = 0
     search_result = []
-    key = 'nothing'
-    try:
-        #n = 0
-        #search_result = []
-        key = entry.strip()
-        #key_u = unicode(key)
-        for k in dict:
-            if key in k:
-                ke = 'key: ' + k.encode('utf-8', 'ignore')
-                va = 'value: ' + dict[k].encode('utf-8', 'ignore')
-                #print('=====================')
-                search_result.append((ke, va))
-                n += 1
-        #print("//////////////////////////////////////////////////////////////////////////////////////")
-        #print("////////Found " + str(n) + " matches for _" + str(key_u) + "_.")
-        #print("//////////////////////////////////////////////////////////////////////////////////////")
-    except:
-        except_message = 'Nothing found in dictionary for _' + key + '_.'
-        search_result.append((except_message, '==='))
-    return search_result, n
+    key = entry.strip()
+    for k in dict:
+        if key in k:
+            ke = k.encode('utf-8', 'ignore')
+            va = dict[k].encode('utf-8', 'ignore')
+            search_result.append((ke, va))
+            n += 1
+    if search_result:
+        return search_result, n
+    else:
+        return [(('Nothing found in dictionary for __' + key + '__.'), '')], n
 
 def main():
     d_creator()

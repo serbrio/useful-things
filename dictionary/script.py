@@ -37,6 +37,7 @@ def SaveFile(ev):
     open(fn, 'wt').write((textbox.get('1.0', 'end')).encode('utf-8'))
 
 def Find(ev):
+    textbox.delete('1.0', END)
     ent = (searchbox.get()).encode('utf-8')
     result, n = dict_creator.d_searcher(ent, dict_creator.d_creator())
     for i in result:
