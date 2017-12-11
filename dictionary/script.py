@@ -11,6 +11,7 @@
 
 from Tkinter import *
 import tkFileDialog
+import ttk
 import dict_creator
 
 
@@ -60,11 +61,20 @@ def Find(ev):
 
 
 root = Tk()
+root.title('Nederlands-Russisch Woordenboek')
+#root.geometry('1000x1000')
 textVar = StringVar()
 
-searchboxFrame = Frame(root)
-panelFrame = Frame(root, height=60, bg='gray')
-textFrame = Frame(root, height=340, width=600)
+nb = ttk.Notebook(root)
+nb.pack(side='top', fill='both', expand=1)
+
+page1 = ttk.Frame(nb)
+nb.add(page1, text='Tab1')
+
+
+searchboxFrame = Frame(page1)
+panelFrame = Frame(page1, height=60, bg='gray')
+textFrame = Frame(page1, height=340, width=600)
 
 searchboxFrame.pack(side='top', fill='both')
 panelFrame.pack(side='top', fill='x')
@@ -105,6 +115,15 @@ findBtn.bind("<Button-1>", Find)
 findBtn.place(x=10, y=10, width=40, height=40)
 saveBtn.place(x=760, y=10, width=80, height=40)
 quitBtn.place(x=850, y=10, width=40, height=40)
+
+
+page2 = ttk.Frame(nb)
+nb.add(page2, text='Tab2')
+Zaglushka = Label(page2, text='Denk aleer gij doende zijt en doende denk dan nog. \n '
+                              'Een goed begin is het halve werk. \n '
+                              'Een goed verstaander heeft maar een half woord nodig. \n'
+                              'Een half ei is beter dan een lege dop.', font='Arial 20', bg="#FFCC99", fg='black')
+Zaglushka.pack(side=TOP, expand=1, fill='both')
 
 root.mainloop()
 
