@@ -69,7 +69,7 @@ nb = ttk.Notebook(root)
 nb.pack(side='top', fill='both', expand=1)
 
 page1 = ttk.Frame(nb)
-nb.add(page1, text='Tab1')
+nb.add(page1, text='Search in dictionary')
 
 
 searchboxFrame = Frame(page1)
@@ -112,13 +112,13 @@ findBtn.bind("<Button-1>", Find)
 
 
 #loadBtn.place(x=10, y=10, width=40, height=40)
-findBtn.place(x=10, y=10, width=40, height=40)
-saveBtn.place(x=760, y=10, width=80, height=40)
-quitBtn.place(x=850, y=10, width=40, height=40)
+findBtn.place(relx=0.0, x=10, rely=0.0, y=10, width=80, height=40)
+saveBtn.place(relx=1.0, x=-140, rely=0.0, y=10, width=80, height=40)
+quitBtn.place(relx=1.0, x=-50, rely=0.0, y=10, width=40, height=40)
 
 
 page2 = ttk.Frame(nb)
-nb.add(page2, text='Tab2')
+nb.add(page2, text='Experiment')
 Zaglushka = Label(page2, text='Denk aleer gij doende zijt en doende denk dan nog. \n '
                               'Een goed begin is het halve werk. \n '
                               'Een goed verstaander heeft maar een half woord nodig. \n'
