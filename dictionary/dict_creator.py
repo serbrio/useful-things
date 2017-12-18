@@ -19,6 +19,7 @@ def d_creator():
     with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
       for line in fi:
           list.append(line)
+    #(!)need to load all dict txt files. 
 
     dict = {}
     pattern = re.compile(" - ")
@@ -28,7 +29,7 @@ def d_creator():
       match = pattern.split(val, maxsplit=1)
       if len(match) == 2:
           dict[unicode(match[0])] = unicode(match[1])
-          #add check, if the dict[unicode(match[0])] is already used, 
+          #(!)add check, if the dict[unicode(match[0])] is already used,
           #if so -> add new key to dict
     return dict
 
@@ -36,7 +37,8 @@ def d_searcher(entry, dict):
     n = 0
     search_result = []
     key = entry.strip()
-    #ignore uppercase
+    #1.need to add ignore uppercase(!)
+    #2.need to drop empty entry (not to return the full dict to such request)
     for k in dict:
         if key in k: 
             ke = k.encode('utf-8', 'ignore')

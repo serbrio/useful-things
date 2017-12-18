@@ -379,7 +379,7 @@ aanzet (de; aanzetten) - начало, зачин
 aanzetstaal (het; aanzetstalen) - мусат
 
 aanzicht (het; aanzichten) - внешний вид
-1. aanzien (zag aan, heeft aangezien) - 1) смотреть на кого-/что-л.: iemand vragend aanzien - вопросительно смотреть на кого-л. 2) посмотреть, подумать, подождать: het nog even aanzien - ещё посмотрим; 3) iemand aanzien voor iemandanders - принять кого-то за кого-л. другого, перепутать кого-то с кем-л.; 4) zonder aanzien des persoons - независимо от чьего-л. положения/ранга; 5) naar het zich laat aanzien - очевидно, судя по всему: Naar het zich laat aanzien komt ze morgen - Похоже, она придёт завтра. 2. aanzien (het; -) - 1) вид, наружность; 2) уважение, почёт, репутация: een man in aanzien - уважаемый человек; 3) ten aanzien van - в связи с чем-л., относительно чего-л.
+aanzien - 1. aanzien (zag aan, heeft aangezien) - 1) смотреть на кого-/что-л.: iemand vragend aanzien - вопросительно смотреть на кого-л. 2) посмотреть, подумать, подождать: het nog even aanzien - ещё посмотрим; 3) iemand aanzien voor iemandanders - принять кого-то за кого-л. другого, перепутать кого-то с кем-л.; 4) zonder aanzien des persoons - независимо от чьего-л. положения/ранга; 5) naar het zich laat aanzien - очевидно, судя по всему: Naar het zich laat aanzien komt ze morgen - Похоже, она придёт завтра. 2. aanzien (het; -) - 1) вид, наружность; 2) уважение, почёт, репутация: een man in aanzien - уважаемый человек; 3) ten aanzien van - в связи с чем-л., относительно чего-л.
 aanzienlijk - 1) значительный; 2) видный, важный, почётный
 aanzijn (het; -) - бытие, жизнь, существование
 aanzitten (zat aan, heeft aangezeten) - 1) сидеть за столом, кушать: Zij zaten aan aan het banket - Они сидели на банкете; 2) трогать руками, прикасаться: Zij zaten overal aan - Они всё трогали
@@ -428,7 +428,7 @@ aardbol (de; aardbollen) - 1) земной шар; 2) глобус
 aarddraad (de; aarddraden) - заземляющий провод
 Aarde/aarde (de; -) - Земля/земля
 aardedonker - очень тёмный, кромешно тёмный
-1. aarden - 1) земляной; 2) глиняный; 2. aarden (aardde, heeft geaard) - 1) привыкать, приживаться, чувствовать себя как дома; 2) быть похожим на кого-л., унаследовать внешность/характер: hij aardt naar zijn vader - он похож на отца; 3) заземять
+aarden - 1. aarden - 1) земляной; 2) глиняный; 2. aarden (aardde, heeft geaard) - 1) привыкать, приживаться, чувствовать себя как дома; 2) быть похожим на кого-л., унаследовать внешность/характер: hij aardt naar zijn vader - он похож на отца; 3) заземять
 aardewerk (het; aardewerken) - керамика, глиняная посуда
 aardgas (het; aardgassen) - природный газ: Rusland is de grootste exporteur van aardgas - Россия - крупнейший экспортёр природного газа; aardgaswinning - добыча природного газа
 aardgeest (de; aardgeesten) - гном
@@ -493,7 +493,7 @@ aarzelaar (de; aarzelaars) - нерешительный, мешкающий че
 aarzelen (aarzelde, heeft geaarzeld) - колебаться, медлить, мешкать
 aarzeling (de; aarzelingen) - нерешительность, промедление
 aarzelloos - без промедления, без колебаний, решительно
-1. aas (het/de; azen) - туз; 2. aas (het; azen) - 1) приманка; 2) падаль
+aas - 1. aas (het/de; azen) - туз; 2. aas (het; azen) - 1) приманка; 2) падаль
 aasdier (het; aasdieren) - падальщик, трупоед
 aaseter (de; aaseters) - падальщик, трупоед
 aasgier (de; aasgieren) - 1) стервятник: De aasgier komt vooral in Afrika maar ook in het zuiden van Europa voor - В основном стервятники обитают в Африке, но встречаются и на юге Европы; 2) хищник, охотник за выгодой: Nu hij bankroet gaat, blijken veel van zijn vroegere vrienden niets anders dan aasgieren te zijn - Теперь он обанкротился и видно, что многие из его бывших друзей не более чем хищники
@@ -507,7 +507,7 @@ Abazijns (het; -) - абазинский язык
 abbreviatie (de; abbreviaties) - аббревиация
 abc (het; abc's) - алфавит: Ken jij het abc al uit je hoofd? - Ты уже знаешь алфавит наизусть?
 abc-boek (het; abc-boeken) - азбука
-ABC-eiland (het; ABC-eilanden) - острова ABC: 1. Малые Антильские: Aruba, Bonaire,Curaçao - Аруба, Бонэйр, Кюрасао; 2. Аляска: Admiralty-eiland, Baranof-eiland, Chichagof-eiland - Адмиралтейский, о.Баранова, о.Чичагова; 3. Испания: Alborán, Balearen, Canarische Eilanden - Альборан, Балеарские о-ва, Канарские о-ва
+ABC-eiland (het; ABC-eilanden) - острова ABC: Малые Антильские: Aruba, Bonaire,Curaçao - Аруба, Бонэйр, Кюрасао; Аляска: Admiralty-eiland, Baranof-eiland, Chichagof-eiland - Адмиралтейский, о.Баранова, о.Чичагова; Испания: Alborán, Balearen, Canarische Eilanden - Альборан, Балеарские о-ва, Канарские о-ва
 ABC-wapens (-; ABC-wapens) - оружие массового поражения
 abces (het; abcessen) - (мед.) абсцесс
 Abchazisch (het; -) - абхазский язык
@@ -573,7 +573,7 @@ absurd - абсурдный, очень нелогичный, странный
 absurdisme(het; absurdismen) - абсурдизм
 absurditeit (de; absurditeiten) - абсурдность
 abt (de; abten) - аббат
-1. abuis (het; abuizen) - ошибка: per/bij abuis - по ошибке; Deze brief is voor de buren, maar hij is per abuis bij ons bezorgd - Это письмо соседям, но по ошибке его принесли нам; 2. abuis - ошибочный, неправый: u bent abuis - Вы ошибаетесь
+abuis - 1. abuis (het; abuizen) - ошибка: per/bij abuis - по ошибке; Deze brief is voor de buren, maar hij is per abuis bij ons bezorgd - Это письмо соседям, но по ошибке его принесли нам; 2. abuis - ошибочный, неправый: u bent abuis - Вы ошибаетесь
 abundant - избыточный, обильный
 abundantie (de; abundanties) - обилие, изобилие
 abusief - ошибочный
@@ -635,12 +635,12 @@ acetylsalicylzuur (het; -) - ацетилсалициловая кислота, 
 Achilles - Ахилл, Ахиллес
 achilleshiel (de; achilleshielen) - ахиллесова пята
 achillespees(de; achillespezen) - ахиллово сухожилие
-1. acht - восемь; 2. acht (de; achten) - 1) внимание: acht geven/acht slaan - обратить внимание; 2) восьмёрка
+acht - 1. acht - восемь; 2. acht (de; achten) - 1) внимание: acht geven/acht slaan - обратить внимание; 2) восьмёрка
 achtbaan (de; achtbanen) - американские горки
 achtbaar - почётный, достойный, уважаемый, почтенный
 achteloos - небрежный, равнодушный
 achteloosheid (de; achteloosheden) - невнимательность, невнимание, небрежность
-1. achten (achtte, heeft geacht) - 1) уважать, почитать: Ik achtte mijn vader heel hoog - Я очень уважал своего отца; 2) обращать внимание: Als je op de computer werkt moet je acht slaan op de meldingen die op het scherm verschijnen - Если работаешь за компьютером, нужно обращать внимание на возникающие на экране уведомления; 3) iemand wordt geacht - от кого-л. ожидается, предполагается: Iedereen wordt geacht op tijd aanwezig te zijn - Ожидается, что все прибудут вовремя; 2. achten - восьмеро: Zij waren met zijn achten - Они были ввосьмером
+achten - 1. achten (achtte, heeft geacht) - 1) уважать, почитать: Ik achtte mijn vader heel hoog - Я очень уважал своего отца; 2) обращать внимание: Als je op de computer werkt moet je acht slaan op de meldingen die op het scherm verschijnen - Если работаешь за компьютером, нужно обращать внимание на возникающие на экране уведомления; 3) iemand wordt geacht - от кого-л. ожидается, предполагается: Iedereen wordt geacht op tijd aanwezig te zijn - Ожидается, что все прибудут вовремя; 2. achten - восьмеро: Zij waren met zijn achten - Они были ввосьмером
 achtenswaardig - уважаемый, потенный, авторитетный
 achter - за: Bob zit voor zijn werk de hele dag achter de computer - По работе Боб целый день сидит за компьютером; Piet parkeert zijn auto achter de winkel - Пит паркует машину за магазином
 achteraan - в конце, сзади: achteraan in de rij staan - стоять в конце ряда, последним в ряду
@@ -711,7 +711,7 @@ achterstand (de; achterstanden) - отставание: Na zijn ziekte had hij e
 achterstellen (stelde achter, heeft achtergesteld) - недооценивать, занижать
 achterstevoren - задом наперёд: Je hebt je hemd achterstevoren aan - Ты надел рубашку задом наперёд
 achtertuin (de; achtertuinen) - задний дворик
-1. achteruit - назад; 2. achteruit (de; -) - задняя скорость: Als je hem in z'n achteruit wilt zetten moet je de pook naar beneden drukken - Если хочешь переключить на заднюю скорость, нужно потянуть рычаг
+achteruit - 1. achteruit - назад; 2. achteruit (de; -) - задняя скорость: Als je hem in z'n achteruit wilt zetten moet je de pook naar beneden drukken - Если хочешь переключить на заднюю скорость, нужно потянуть рычаг
 achteruitgang (de; achteruitgangen) - 1) чёрный ход, задний выход; 2) ухудшение, снижение, регресс: een achteruitgang van de studieresultaten - ухудшение результатов учёбы
 achteruitkijkspiegel (de; achteruitkijkspiegels) - зеркало заднего вида
 achteruitrijden (reed achteruit, is achteruitgereden) - ехать задним ходом
@@ -843,7 +843,7 @@ aderspat (de; aderspatten) - варикозное расширение вен н
 ADHD (Attention Deficit Hyperactivity Disorder; het; -) - синдром дефицита внимания и гиперактивности
 adherent (de; adherenten) - приверженец, сторонник, последователь
 adhesie (de; -) - адгезия
-1. adieu - прощальное приветствие, слово про прощании; 2. adieu (het; adieus) - прощание
+adieu - 1. adieu - прощальное приветствие, слово про прощании; 2. adieu (het; adieus) - прощание
 adipositas (de; -) - ожирение
 adjectief (het; adjectieven), adjectivum (het, -) - прилагательное
 adjudant (de; adjudanten) - адъютант
@@ -1022,8 +1022,8 @@ afgod (de;afgoden) - 1) идол, кумир, божество: De beroemde voet
 afgoderij (de; afgoderijen) - идолопоклонничество: Een kennis van mij gelooft in afgoderij - Один мой знакомый - идолопоклонник
 afgraven (groef af, heeft afgegraven) - вырыть, выкопать
 afgraving (de; afgravingen) - карьер, раскопки
-afgrendelen (grendelde af, heeft afgegrendeld) - блокировать, перекрыть, заслонить, изолировать
-1. afgrijselijk - ужасный: Wat een afgrijselijke kleur is dat! - Какой ужасный цвет! 2. afgrijselijk - ужасно, очень, сильно: Dat is echt een afgrijselijk nare gebeurtenis - Это действительно ужасно неприятное происшествие
+afgrendelen (grendelde af, heeft afgegrendeld) - блокировать, перекрыть, заслонить, изолировать 
+afgrijselijk - 1. afgrijselijk - ужасный: Wat een afgrijselijke kleur is dat! - Какой ужасный цвет! 2. afgrijselijk - ужасно, очень, сильно: Dat is echt een afgrijselijk nare gebeurtenis - Это действительно ужасно неприятное происшествие
 afgrijslijk - отвратительный, жуткий: Wat een afgrijselijke jurk! - Какое отвратительное платье!
 afgrijzen (het; -) - отвращещние
 afgrond	(de; afgronden) - пропасть, бездна: Hoogtevrees is de angst in een afgrond te vallen - Страх высоты - это боязнь упасть в пропасть
@@ -1037,11 +1037,11 @@ afhalen (haalde af, heeft afgehaald) - забрать
 afhandelen (handelde af, heeft afgehandeld) - уладить, разрешить, справиться: een zaak afhandelen - уладить дело
 afhandeling (de; afhandelingen) - улаживание, выполнение, исполнение: De afhandeling was netjes en we stonden snel weer buiten - Всё быстро уладили, и скоро мы снова были на улице
 afhandig - iemand iets afhandig maken - прикарманить, спереть
-afhangen (hing af, heeft afgehangen) - 1. afhangen van iemand/iets - зависеть от кого-/чего-л.: Het hangt van het weer af of deze wedstrijd doorgang kan vinden - Состоится ли матч, зависит от погоды; 2. свисать
+afhangen (hing af, heeft afgehangen) - 1) afhangen van iemand/iets - зависеть от кого-/чего-л.: Het hangt van het weer af of deze wedstrijd doorgang kan vinden - Состоится ли матч, зависит от погоды; 2) свисать
 afhankelijk - зависимый, зависящий: Kinderen zijn afhankelijk van hun ouders en later zijn de ouders afhankelijk van hun kinderen - Дети зависимы от родителей, а потом родители зависят от своих детей
 afhankelijkheid (de; afhankelijkheden) - зависимость: Hij vind zijn afhankelijkheid van alcohol en tabak niet prettig - Ему не нравилась его зависимость от алкоголя и табака
-afhappen (hapte af, heeft afgehapt) - 1. откусить, выкусить; 2. выхватить, выцепить
-afhechten (hechtte af, heeft afgehecht) - 1. завершить, закончить начатое; 2. закрепить (в т.ч. перен.): een draad afhechten - завязать узелок
+afhappen (hapte af, heeft afgehapt) - 1) откусить, выкусить; 2) выхватить, выцепить
+afhechten (hechtte af, heeft afgehecht) - 1) завершить, закончить начатое; 2)закрепить (в т.ч. перен.): een draad afhechten - завязать узелок
 afhellen (helde af, heeft afgeheld) - скатиться
 afhelpen (hielp af, heeft afgeholpen) - избавить кого-л. от чего-л. (iemand van iets afhelpen)
 afhouden (hield af, heeft afgehouden) - держать на расстоянии, удерживать: Je kunt de brandende kaars beter verder van het brandbare gordijn afhouden - Горящие свечи лучше держать подальше от воспламеняющихся занавесок
@@ -1217,3 +1217,58 @@ afsnoepen (snoepte af, heeft afgesnoept) - выиграть, отыграть: H
 afsnoeren (snoerde af, heeft afgesnoerd) - привязать, связать
 afspeelbaar - воспроизводимый
 afspelen (speelde af, heeft afgespeeld) - 1) воспроизводить: Hij speelde een hele mooie CD voor ons af - Он дал нам послушать очень красивый диск; 2)доиграть: Dat muziekstuk werd niet tot het einde toe afgespeeld - Это произведение не доиграли до конца; 3) z.afspelen - происходить, случаться: Dit verhaal speelde zich in de negentiende eeuw af - Эта история произошла в девятнадцатом веке
+afspiegelen (spiegelde af, heeft afgespiegeld) - отражать; zich afspiegelen - отражаться
+afspiegeling (de; afspiegelingen) - отражение
+afsplitsing (de; afsplitsingen) - отделение, ответвление
+afspoelen (spoelde af, heeft afgespoeld) - 1) смывать; 2) разматывать
+afspraak (de; afspraken) - 1) договорённость (о встрече), соглашение: een afspraak afzeggen - отменить встречу; 2) свидание: De jongen maakte een afspraakje met het leuke meisje - Парень пригласил приятную девушку на свидание
+afspraakje (het; -) - свиданка
+afspreken (sprak af, heeft afgesproken) - договариваться (о встрече), назначать: Zij spraken af om de vergadering te verzetten - Они договорились перенести заседание; afgesproken! - договорились!
+afspringen (sprong af, is afgesprongen) - 1) спрыгнуть, соскочить; 2) слететь, соскочить: De deksel sprong van de pan af toen het water ging koken - Крышка слетела с кастрюли, когда вода закипела; 3) измениться, отмениться: de onderhandelingen zijn afgesprongen - переговоры отменились
+afstaan (stond af, heeft afgestaan) - отдавать: als donor een nier afstaan voor een ziek familielid - быть донором почки для больного члена семьи
+afstammeling (de; afstammelingen) - потомок
+afstammen (stamde af, is afgestamd) - быть родом откуда-л., чьим-л. потомком, происходить из: Het Nederlands stamt af van het West-Germaans - Нидерландский язык относится к западногерманской группе; Johan Willem Friso stamt af van koningin Beatrix - Йохан Виллем Фризо - потомок королевы Беатрикс
+afstamming (de; afstammingen) - происхождение: De afstamming van de zoogdierorden is dank zij DNA-onderzoek een stuk duidelijker geworden - Происхождение млекопитающих стало понятнее благодаря исследованию ДНК
+afstammingslijn (de; afstammingslijnen) - родословная
+afstand (de; afstanden) - расстояние, дистанция, интервал: iemand op een afstand houden - держать кого-л. на расстоянии; afstand doen van - отказываться от чего-л.: afstand doen van de Nederlandse nationaliteit - отказываться от нидерландского гражданства; afstand nemen van - отстраняться, дистанцироваться: in de vakantie afstand nemen van je werk - в отпуске дистанцироваться от работы
+afstandbediening (de; afstandbedieningen) - дистанционное управление
+afstandelijk - отстранённый, безучастный
+afstandsbesturing (de; afstandsbesturingen) - дистанционное управление
+afstandskind (het; afstandskinderen) - ребёнок, который передаётся на усыновление/удочерение
+afstandsonderwijs (het; -) - дистанционное обучение
+afstandsschot (het; afstandsschoten) - стрельба по цели с большого расстояния
+afstappen (stapte af, is afgestapt) - сойти, слезть, спуститься: van zijn fiets afstappen - слезть с велосипеда; op iemand afstappen - приблизиться к кому-л.; van een onderwerp afstappen - оставить, перейти к чему-л. другому
+afsteken (stak af, heeft/is afgestoken) - 1) поджигать, разводить огонь: Hij wilde een lucifer afsteken, maar het was te winderig - Он хотел поджечь спичку, но было слишком ветрено; 2) выделяться, контрастировать: het witte huis stak sterk af tegen het donkere groen - На фоне тёмно-зелёного белый дом сильно выделялся; 3) отплывать, отходить; 3) рассказывать: een verhaal afsteken - рассказывать историю
+afstellen (stelde af, heeft afgesteld) - настраивать, устанавливать: We hebben de verwarming op 21 graden afgesteld - Мы установили обогреватель на 21 градус
+afstemmen (stemde af, heeft afgestemd) - 1) голосовать против, отклонить: een wet afstemmen - голосовать против законопроекта; 2) настраивать (муз.инструмент/частоту радио): We stemden de radio af op deze zender - Мы настроили эту радиостанцию; 3) установить соответствие, урегулировать: Wij stemden onze agenda's op elkaar af zodat we maandagochtend een vergadering konden houden - Мы подстроили свои расписания друг под друга, чтобы в понедельник утром провести совещание
+afstempelen (stempelde af, heeft afgestempeld) - штамповать
+afsterven (stierf af, is afgestorven) - умереть, скончаться
+afstijgen (steeg af, is afgestegen) - 1) спускаться: een trap afstijgen - спуститься по лестнице; 2) слезть, сойти: van het paard afstijgen - слезть с лошади
+afstoffen (stofte af, heeft afgestoft) - вытереть пыль, избавиться от пыли
+afstompen (stompte af, heeft/is afgestompt) - затупиться: Dit mes is aardig afgestompt - Этот нож сильно затупился
+afstoppen (stopte af, heeft afgestopt) - 1) препятствовать, ограничивать, затруднять движение; 2) затыкать
+afstotelijk - отвратительный, омерзительный: De vrouw had een afstotelijke, lelijke, maar wel heel erg rijke man - У этой женщины был отвратительный, противный, но очень богатый муж
+afstoten (stootte af, heeft afgestoten) - отвергать, отторгать, отталкивать: Het lichaam stootte het donorhart af - Тело отторгало донорское сердце; Hij stootte zijn beste vrienden van zich af - Он оттолкнул своих лучших друзей
+afstoting (de; afstotingen) - отторжение (трансплантанта), отталкивание (магнитов друг от друга)
+afstoven (stoofde af, heeft afgestoofd) - (кулинар.) потушить до готовности
+afstraffen (strafte af, heeft afgestraft) - наказать
+afstraffing (de; afstraffingen) - наказание
+afstrepen (streepte af, heeft afgestreept) - отметить галочкой, пометить как сделанное
+afstrijken (streek af, heeft afgestreken) - 1) чиркнуть и зажечь: een lucifer afstrijken - зажечь спичку; 2) сгладить, разгладить: een afgestreken eetlepel suiker - столовая ложка сахара (без горки)
+afstropen (stroopte af, heeft afgestroopt) - 
+afstudeerscriptie (de; afstudeerscripties) - дипломная работа: Op het eind van een masteropleiding moet de student een afstudeerscriptie maken - В конце магистерской программы студент должен защитить диплом
+afstuderen (studeerde af, is afgestudeerd) - окончить ВУЗ, получить образование: Hij is vorig jaar afgestudeerd - В прошлом году он закончил университет
+aft (de; aften) - афт
+aftaaien (taaide af, is afgetaaid) - смыться, смотаться, удирать
+aftakelen (takelde af, is afgetakeld) - слабеть, дряхлеть, сбавлять: Door zijn ziekte is hij erg afgetakeld - Из-за болезни он сильно ослаб
+aftakking (de; aftakkingen) - ответвление, разделение, развилка
+aftands - дряхлый, шаткий, устаревший: Het aftandse huis werd vorig jaar gesloopt - Этот ветхий дом снесли в прошлом году
+aftappen (tapte af, heeft afgetapt) - 1) сцеживать, сливать: Het aftappen van het bloed ging pijnloos - Кроводача прошла безболезненно; 2) прослушивать, подслушивать: de telefoonlijn aftappen - прослушивать телефонную линию
+aftasten (tastte af, heeft afgetast) - ощупывать: In het pikkedonker tastte hij de muur af om de lichtschakelaar te vinden - В кромешной темноте он ощупывал стену, чтобы найти выключатель
+aftekenen (tekende af, heeft afgetekend) - 1) подписывать, расписываться; 2) проявляться; 3) очерчивать, намечать
+aftelbaar - исчисляемый
+aftellen (telde af, heeft afgeteld) - 1) отсчитать; 2) производить обратный отсчёт
+aftikken (tikte af, heeft afgetikt) - 1) осалить (в игре в салки); 2) стряхнуть пепел с сигареты
+aftiteling (de; aftitelingen) - титры
+aftobben (tobde af, heeft afgetobd) - замучиться, вымучиться
+aftocht (de; aftochten) - уход; de aftocht blazen - сбегать, бежать
