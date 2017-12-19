@@ -37,7 +37,10 @@ def SaveFile(ev):
     open(fn, 'wt').write((textbox.get('1.0', 'end')).encode('utf-8'))
 
 def ResultText(request, count):
-    txt = 'Found ' + str(count) + ' matches for "' + request + '".'
+    if count == '-':
+        txt = ''
+    else:
+        txt = 'Found ' + str(count) + ' matches for "' + request + '".'
     textVar.set(txt)
 
 def Find(ev):

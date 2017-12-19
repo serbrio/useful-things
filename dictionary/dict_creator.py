@@ -34,23 +34,25 @@ def d_creator():
     return dict
 
 def d_searcher(entry, dict):
-    n = 0
-    search_result = []
     key = entry.strip()
-    #1.need to add ignore uppercase(!)
-    #2.need to drop empty entry (not to return the full dict to such request)
-    for k in dict:
-        if key in k: 
-            ke = k.encode('utf-8', 'ignore')
-            va = dict[k].encode('utf-8', 'ignore')
-            search_result.append((ke, va))
-            n += 1
-    if search_result:
-        #if first word ('word ') fully matches key (the request), 
-        #put it in the top of the search_result list
-        return sorted(search_result), n
+    if key == '':
+        return [((''), '')], '-'
     else:
-        return [(('Nothing found in dictionary for "' + key + '".'), '')], n
+        n = 0
+        search_result = []
+    #1.need to add ignore uppercase(!)
+        for k in dict:
+            if key in k:
+                ke = k.encode('utf-8', 'ignore')
+                va = dict[k].encode('utf-8', 'ignore')
+                search_result.append((ke, va))
+                n += 1
+        if search_result:
+            #if first word ('word ') fully matches key (the request),
+            #put it in the top of the search_result list
+            return sorted(search_result), n
+        else:
+            return [(('Nothing found in dictionary for "' + key + '".'), '')], n
 
 
 
