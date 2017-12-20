@@ -36,7 +36,7 @@ def d_creator():
 def d_searcher(entry, dict):
     key = entry.strip()
     if key == '':
-        return [((''), '')], '-'
+        return [('', '')], ''
     else:
         n = 0
         search_result = []
