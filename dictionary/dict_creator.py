@@ -42,7 +42,7 @@ def d_searcher(entry, dict):
         search_result = []
     #1.need to add ignore uppercase(!)
         for k in dict:
-            if key in k:
+            if key.lower() in k.lower():
                 ke = k.encode('utf-8', 'ignore')
                 va = dict[k].encode('utf-8', 'ignore')
                 search_result.append((ke, va))
