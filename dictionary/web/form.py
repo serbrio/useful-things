@@ -6,8 +6,13 @@
 
 import cgi
 import html
+import sys
+import os
+sys.path.append(os.path.abspath('../../modules/dict'))
 import dict_creator
 
+
+path_to_Template = os.path.abspath('../../modules/dict/Template.html')
 
 def main():
     form = cgi.FieldStorage()
@@ -18,7 +23,7 @@ def main():
 
 def processInput(s):
     ResultStr, nStr = Find(s)
-    return fileToStr('Template.html').format(**locals())
+    return fileToStr(path_to_Template).format(**locals())
 
 def fileToStr(fileName):
     f = open(fileName)

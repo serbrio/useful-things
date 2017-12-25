@@ -11,12 +11,13 @@
 
 import re
 import io
+import os
 #import sys
 
 
 def d_creator():
     list = []
-    with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
+    with io.open(os.path.abspath('../../modules/dict/NL-RU-A.txt'), 'r', encoding='utf-8', errors='ignore') as fi:
       for line in fi:
           list.append(line)
 

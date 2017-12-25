@@ -6,6 +6,12 @@
 
 import cgi
 import time
+import os
+import sys
+
+sys.path.append(os.path.abspath('../../modules/dict'))
+logs_path = os.path.abspath('../../modules/dict/logs.txt')
+
 
 
 def logging(fileName, logStr):
@@ -33,4 +39,4 @@ except Exception as e:
           <h1>Something went wrong.</h1>
           </body>
           </html>""")
-    logging('logs.txt', str(e))
+    logging(logs_path, str(e))
