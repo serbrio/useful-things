@@ -17,7 +17,8 @@ import os
 
 def d_creator():
     list = []
-    with io.open(os.path.abspath('../../modules/dict/NL-RU-A.txt'), 'r', encoding='utf-8', errors='ignore') as fi:
+    path_to_dict_source = os.path.abspath('/data/www/modules/dict/NL-RU-A.txt')
+    with io.open(path_to_dict_source, 'r', encoding='utf-8', errors='ignore') as fi:
       for line in fi:
           list.append(line)
 

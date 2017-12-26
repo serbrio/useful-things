@@ -7,11 +7,9 @@
 import cgi
 import time
 import os
-import sys
 
-sys.path.append(os.path.abspath('../../modules/dict'))
-logs_path = os.path.abspath('../../modules/dict/logs.txt')
 
+logs_path = os.path.abspath('/data/www/logs/dict_logs.txt')
 
 
 def logging(fileName, logStr):
@@ -25,7 +23,7 @@ def logging(fileName, logStr):
 
 try:
     print("Content-type: text/html\n\n")
-    import form
+    from dict import form
     form.main()
 
 except Exception as e:
