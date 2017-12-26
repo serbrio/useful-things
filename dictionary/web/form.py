@@ -6,13 +6,12 @@
 
 import cgi
 import html
-#import sys
 import os
-#sys.path.append(os.path.abspath('../../modules/dict'))
 from dict import dict_creator
 
 
 path_to_Template = os.path.abspath('/data/www/modules/dict/Template.html')
+
 
 def main():
     form = cgi.FieldStorage()
