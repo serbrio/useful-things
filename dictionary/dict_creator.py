@@ -48,6 +48,11 @@ def d_searcher(entry, dict):
                 va = dict[k].encode('utf-8', 'ignore')
                 search_result_full_match.append((ke, va))
                 n += 1
+            elif key.lower() == k.lower().split()[0]:
+                ke = k.encode('utf-8', 'ignore')
+                va = dict[k].encode('utf-8', 'ignore')
+                search_result_full_match.append((ke, va))
+                n += 1
             elif key.lower() in k.lower():
                 ke = k.encode('utf-8', 'ignore')
                 va = dict[k].encode('utf-8', 'ignore')
