@@ -39,17 +39,30 @@ def d_searcher(entry, dict):
         return [('', '')], ''
     else:
         n = 0
+        search_result_full_match = []
         search_result = []
+        final_result = []
         for k in dict:
-            if key.lower() in k.lower():
+            if key.lower() == k.lower():
+                ke = k.encode('utf-8', 'ignore')
+                va = dict[k].encode('utf-8', 'ignore')
+                search_result_full_match.append((ke, va))
+                n += 1
+            elif key.lower() in k.lower():
                 ke = k.encode('utf-8', 'ignore')
                 va = dict[k].encode('utf-8', 'ignore')
                 search_result.append((ke, va))
                 n += 1
+        if search_result_full_match:
+            for i in sorted(search_result_full_match):
+                final_result.append(i)
         if search_result:
+            for i in sorted(search_result):
+                final_result.append(i)
             #if first word ('word ') fully matches key (the request),
             #put it in the top of the search_result list
-            return sorted(search_result), n
+        if final_result:
+            return final_result, n
         else:
             return [(('Nothing found in dictionary for "' + key + '".'), '')], n
 
