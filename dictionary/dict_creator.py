@@ -61,9 +61,13 @@ def d_searcher(entry, dictio):
                 n += 1
         if search_result_full_match:
             for i in sorted(search_result_full_match):
+                if len(final_result) > 10:
+                    break
                 final_result.append(i)
         if search_result:
             for i in sorted(search_result):
+                if len(final_result) >= 10:
+                    break
                 final_result.append(i)
             #if first word ('word ') fully matches key (the request),
             #put it in the top of the search_result list

@@ -40,7 +40,11 @@ def ResultText(request, count):
     if count == '':
         txt = ''
     else:
-        txt = 'Found ' + str(count) + ' matches for "' + request + '".'
+        if count > 10:
+            tag_s = 'Listed firt 10 matches.'
+        else:
+            tag_s = '...'
+        txt = 'Found ' + str(count) + ' matches for "' + request + '".\n' + tag_s
     textVar.set(txt)
 
 def Find(ev):
