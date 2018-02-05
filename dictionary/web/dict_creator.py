@@ -16,10 +16,11 @@ import os
 
 def d_creator():
     listo = []
-    path_to_dict_source = os.path.abspath('/data/www/modules/dict/NL-RU-A.txt')
-    with io.open(path_to_dict_source, 'r', encoding='utf-8', errors='ignore') as fi:
-        for line in fi:
-            listo.append(line)
+    path_to_dict_source = os.path.abspath('/data/www/modules/dict/txt_sources/')
+    for file_name in os.listdir(path_to_dict_source):
+        with io.open(path_to_dict_source + '/' + file_name, 'r', encoding='utf-8', errors='ignore') as fi:
+            for line in fi:
+                listo.append(line)
 
     dictio = {}
     pattern = re.compile(" - ")
@@ -41,28 +42,32 @@ def d_searcher(entry, dictio):
     if key == '':
         return [('', '')], ''
     else:
-        n = 0
+        n = [0]
+
+        def comforter(k, l):
+            l.append((k, dictio[k]))
+            n[0] += 1
+
         search_result_full_match = []
+        search_result_head_match = []
         search_result = []
         final_result = []
         for k in dictio:
             if key.lower() == k.lower():
-                ke = k
-                va = dictio[k]
-                search_result_full_match.append((ke, va))
-                n += 1
+                comforter(k, search_result_full_match)
             elif key.lower() == k.lower().split()[0]:
-                ke = k
-                va = dictio[k]
-                search_result_full_match.append((ke, va))
-                n += 1
+                comforter(k, search_result_full_match)
+            elif re.match(key.lower(), k.lower()):
+                comforter(k, search_result_head_match)
             elif key.lower() in k.lower():
-                ke = k
-                va = dictio[k]
-                search_result.append((ke, va))
-                n += 1
+                comforter(k, search_result)
         if search_result_full_match:
             for i in sorted(search_result_full_match):
+                if len(final_result) > 10:
+                    break
+                final_result.append(i)
+        if search_result_head_match:
+            for i in sorted(search_result_head_match):
                 if len(final_result) > 10:
                     break
                 final_result.append(i)
@@ -74,9 +79,9 @@ def d_searcher(entry, dictio):
                 # if first word ('word ') fully matches key (the request),
                 # put it in the top of the search_result list
         if final_result:
-            return final_result, n
+            return final_result, n[0]
         else:
-            return [(('Nothing found in dictionary for "' + key + '".'), '')], n
+            return [(('Nothing found in dictionary for "' + key + '".'), '')], n[0]
 
 
 
