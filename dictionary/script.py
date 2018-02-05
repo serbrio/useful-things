@@ -41,7 +41,7 @@ def ResultText(request, count):
         txt = ''
     else:
         if count > 10:
-            tag_s = 'Listed firt 10 matches.'
+            tag_s = 'Listed first 10 matches.'
         else:
             tag_s = '...'
         txt = 'Found ' + str(count) + ' matches for "' + request + '".\n' + tag_s
