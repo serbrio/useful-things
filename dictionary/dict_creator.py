@@ -12,13 +12,15 @@
 import re
 import io
 #import sys
+import os
 
 
 def d_creator():
     listo = []
-    with io.open('NL-RU-A.txt', 'r', encoding='utf-8', errors='ignore') as fi:
-        for line in fi:
-            listo.append(line)
+    for file_name in os.listdir('./txt_sources/'):
+        with io.open('./txt_sources/%s' % file_name, 'r', encoding='utf-8', errors='ignore') as fi:
+            for line in fi:
+                listo.append(line)
     #(!)need to load all dict txt files. 
 
     dictio = {}
