@@ -14,6 +14,8 @@ import tkFileDialog
 import ttk
 import dict_creator
 
+#def ShowMore(ev):
+#    showMoreBtn.place_forget()
 
 def Quit(ev):
     global root
@@ -52,6 +54,20 @@ def Find(ev):
     ent = (searchbox.get()).encode('utf-8')
     result, n = dict_creator.d_searcher(ent, dict_creator.d_creator())
     #textbox.tag_config("keyWord", background="yellow", foreground="blue")
+#    if n > 10:
+#        global showMoreBtn
+#        try:
+#            showMoreBtn.place_forget()
+#        except NameError:
+#            pass
+#        showMoreBtn = Button(panelFrame, text='Show more...')
+#        showMoreBtn.bind("<Button-1>", ShowMore)
+#        showMoreBtn.place(relx=1.0, x=-230, rely=0.0, y=10, width=80, height=40)
+#    else:
+#        try:
+#            showMoreBtn.place_forget()
+#        except NameError:
+#            pass
     for i in result:
         start_idx = textbox.index(CURRENT)
         textbox.insert(END, i[0])
