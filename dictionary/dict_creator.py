@@ -10,17 +10,19 @@
 """
 
 import re
-import io
+#import io
 #import sys
 import os
+import testo
 
 
 def d_creator():
-    listo = []
-    for file_name in os.listdir('./txt_sources/'):
-        with io.open('./txt_sources/%s' % file_name, 'r', encoding='utf-8', errors='ignore') as fi:
-            for line in fi:
-                listo.append(line)
+    listo = testo.listo
+    #listo = []
+    #for file_name in os.listdir('./txt_sources/'):
+    #    with io.open('./txt_sources/%s' % file_name, 'r', encoding='utf-8', errors='ignore') as fi:
+    #        for line in fi:
+    #            listo.append(line)
 
     dictio = {}
     pattern = re.compile(" - ")
