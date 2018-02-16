@@ -11,7 +11,7 @@
 
 import os
 import io
-
+import base64
 
 def list_creator():
     listo = []
@@ -21,10 +21,18 @@ def list_creator():
                 listo.append(line)
     return listo
 
+def icon_b64_creator():
+    with io.open('./images/raw_icon.gif', 'rb') as fi:
+        icon_b64 = base64.b64encode(fi.read())
+    return icon_b64
+
+
 def main():
     listo = list_creator()
-    file = open('testo.py', 'a')
+    #icon_b64 = icon_b64_creator()
+    file = open('testo.py', 'w')
     file.write('listo = ' + str(listo))
+    #file.write('\nicon_b64 = ' + '"""' + icon_b64 + '"""')
     file.close()
 
 

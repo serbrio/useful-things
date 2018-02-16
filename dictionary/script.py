@@ -13,6 +13,10 @@ from Tkinter import *
 import tkFileDialog
 import ttk
 import dict_creator
+#import testo
+#import tempfile
+#import base64
+
 
 #def ShowMore(ev):
 #    showMoreBtn.place_forget()
@@ -86,6 +90,11 @@ def Find(ev):
 root = Tk()
 root.title('Nederlands-Russisch Woordenboek')
 #root.geometry('1000x1000')
+#ICON = base64.b64decode(testo.icon_b64)
+#_, ICON_PATH = tempfile.mkstemp()
+#with open(ICON_PATH, 'wb') as icon_file:
+#    icon_file.write(ICON)
+#root.iconbitmap(ICON_PATH)
 textVar = StringVar()
 
 nb = ttk.Notebook(root)
