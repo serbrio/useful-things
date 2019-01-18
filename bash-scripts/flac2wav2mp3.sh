@@ -1,10 +1,5 @@
 #! /bin/bash
 
-if [ -z $* ]
-then 
-	echo "No DIR given!"
-	exit 1
-fi
 
 findCUE ()
 {
@@ -12,7 +7,7 @@ findCUE ()
 	for f in "$WHERE"/*
        	do
 		if [[ "$f" == *\.cue ]]
-		then 
+		then
 			local CUE="$(realpath "$f")"
 			echo "$CUE"
 			break
@@ -20,79 +15,114 @@ findCUE ()
 	done
 }
 
-ape_flac2flacs ()
+
+split2fmt ()
 {
-	local WHAT="$1"
-	local WHERE="$(realpath "$2")"
-	local SDF="$SD"_FLACS
-	mkdir "$SDF"
-	local CUE=`findCUE $SD` 
-	
-	if [[ "$TOWHAT" == mp3 ]]
-	then 
-		shnsplit -f "$CUE" -t "%n %t" -o 'cust ext=mp3 lame --preset insane -q 0 - %f' *."$WHAT" -d
-
-	shnsplit -f "$CUE" -t "%n %t" -o flac *."$WHAT" -d "$SDF"
-	#`ls | grep -E "*.ape|*.flac"
-
+	if [[ "$TRGT_FORMAT" == mp3 ]]
+	then
+		shnsplit -f "$CUE" -t "%n %t" -o 'cust ext=mp3 lame --preset insane -q 0 - %f' `ls | grep -E "$SRC_DIR/*.ape|$SRC_DIR/*.flac"` -d "$TRGT_DIR"
+    elif [[ "$TRGT_FORMAT" == flac ]]
+    then
+        shnsplit -f "$CUE" -t "%n %t" -o flac -d "$TRGT_DIR" #need to add HIGH QUALITY for FLAC
+    else
+        echo "Bad argument for option -t (mp3 or flac expected, but got: "$TRGT_FORMAT""
+        exit 1
+    fi
 }
 
 
+encode ()
+{
+    if [[ "$TRGT_FORMAT" == mp3 ]]
+	then
 
-while getopts "hfam" opt
+		lame --preset insane -q 0 `ls | grep -E "$SRC_DIR/*.ape|$SRC_DIR/*.flac"` -d "$TRGT_DIR"
+    elif [[ "$TRGT_FORMAT" == flac ]]
+    then
+        shnsplit -f "$CUE" -t "%n %t" -o flac -d "$TRGT_DIR" #need to add HIGH QUALITY for FLAC
+    else
+        echo "Bad argument for option -t (mp3 or flac expected, but got: "$TRGT_FORMAT""
+        exit 1
+    fi
+}
+
+
+checkargs () {
+if [[ $OPTARG == ^-* ]]
+then
+    echo "Probably bad argument for option!"
+    exit 1
+fi
+}
+
+
+if [ -z $* ] && [ ! -e "$1" ]
+then 
+	echo "No DIR given!"
+	echo "Usage:"
+	echo "$0 SRC_DIR [-s IF_TO_BE_SPLITTED] [-f TRGT_FORMAT]"
+	exit 1
+fi
+
+
+while getopts "hs:f:" opt
 do
 	case $opt in
-		h) echo "$0 [-hfam] SOURCE_DIR"
+		h) checkargs
+		   echo "$0 [-h] SOURCE_DIR"
 		   echo "-h for help"
-		   echo "-f splits FLAC according to the first found in source dir CUE file;
-		            results saved in SOURCE_DIR__FLACS"
-		   echo "-a splits APE to FLAC according to the first found in SOURCE_DIR CUE file;
-		            results saved in SOURCE_DIR__FLACS"
-		   echo "-m converts all FLACs found in SOURCE_DIR 
-		            (SOURCE_DIR__FLACS, if -s or -a specified) to MP3;
-			    results saved in SOURCE_DIR__MP3"
+		   echo "-s split: yes or no"
+		   echo "-f target format: flac or mp3"
 		   exit 0
 		   ;;
-	   	f)
-			shift;;
-	   	a)
-			shift;;
-	   	m)
-			shift;;
-
+	   	s) checkargs
+	   	   2SPLIT="$OPTARG"
+		   ;;
+	   	f) checkargs
+	   	   TRGT_FORMAT="$OPTARG"
+		   ;;
+	   	*) echo "No reasonable options found!"
+		   ;;
 	esac
 done
+shift $((OPTIND-1))
 
 
-echo "SRC [splitflac ape]"
-SRC_DIR=$1
+SRC_DIR="$(realpath "$*")"                # Need to add parsing several dirs.
+TRGT_DIR="$SRC_DIR"_"$TRGT_FORMAT"
+mkdir "$TRGT_DIR"
+CUE=`findCUE "$SRC_DIR"`
+
+
+if [ -z "$CUE" ]
+then $2SPLIT=no
+fi
+
+if [[ $2SPLIT == yes ]]
+then
+    split2fmt
+elif [[ $2SPLIT == no ]]
+then
+    encode
+else
+    echo "Bad argument for option -s"
+    exit 1
+fi
+
+
+
 #MP3_DIR=../`echo $PWD | gawk 'match($0, /.*\/(.*)$/, a) {print a[1]}'`_mp3
-MP3_DIR="$SRC_DIR"_mp3
-mkdir "$MP3_DIR"
 
-if splitflac (means split flac)
-then shnsplit -f cue -t "%n %t" -o flac
+	#shnsplit -f "$CUE" -t "%n %t" -o flac *."$WHAT" -d "$SDF"
+	#`ls | grep -E "*.ape|*.flac"
 
 
-       	
-if ape
-
-for f in "$SRC_DIR"/*.flac
-do
-		flac -d "$f"	
-        WAV_F=`echo "$f" | sed s/\.flac$/.wav/g`
-		lame --preset insane "$WAV_F"
-		rm -v "$WAV_F"
-		MP3_F=`echo "$f" | sed s/\.flac$/.mp3/g`
-		mv -v "$MP3_F" "$MP3_DIR" 
-done
-
-
-func () 
-{
-
-}
-
-
-for d in KOVAL/*/*; do if [[ "$d" == *\.cue ]]; then echo $d; fi; done
-shnsplit -f cue.cue -t "%n %t" -o flac Pieter.ape
+#for f in "$SRC_DIR"/*.flac
+#do
+#		flac -d "$f"
+#        WAV_F=`echo "$f" | sed s/\.flac$/.wav/g`
+#		lame --preset insane "$WAV_F"
+#		rm -v "$WAV_F"
+#		MP3_F=`echo "$f" | sed s/\.flac$/.mp3/g`
+#		mv -v "$MP3_F" "$MP3_DIR"
+#done
