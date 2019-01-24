@@ -25,7 +25,8 @@ split2fmt ()
     then
         shnsplit -f "$CUE" -t "%n %t" -o flac -d "$TRGT_DIR" #need to add HIGH QUALITY for FLAC
     else
-        echo "Bad argument for option -t (mp3 or flac expected, but got: "$TRGT_FORMAT""
+        echo -e "Bad argument for '-t' option:\n
+                 mp3 or flac expected, but got "$TRGT_FORMAT""
         exit 1
     fi
 }
@@ -35,13 +36,14 @@ encode ()
 {
     if [[ "$TRGT_FORMAT" == mp3 ]]
 	then
-
-		lame --preset insane -q 0 `ls | grep -E "$SRC_DIR/*.ape|$SRC_DIR/*.flac"` -d "$TRGT_DIR"
+        #here starts for-loop?
+		lame --preset insane -q 0 `ls | grep -E "$SRC_DIR/*.ape|$SRC_DIR/*.flac"` # where to save& -d "$TRGT_DIR"
     elif [[ "$TRGT_FORMAT" == flac ]]
     then
         shnsplit -f "$CUE" -t "%n %t" -o flac -d "$TRGT_DIR" #need to add HIGH QUALITY for FLAC
     else
-        echo "Bad argument for option -t (mp3 or flac expected, but got: "$TRGT_FORMAT""
+        echo -e "Bad argument for '-t' option:\n
+                 mp3 or flac expected, but got "$TRGT_FORMAT""
         exit 1
     fi
 }
