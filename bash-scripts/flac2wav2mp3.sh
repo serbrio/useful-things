@@ -94,6 +94,8 @@ encode ()
         do
 		    lame --preset insane -q 0 `ls | grep -E "$SRC_DIR/*.ape|$SRC_DIR/*.flac"` # where to save -d "$TRGT_DIR"
 		done  #may be here something like:  <  ?
+		# or maybe look at:
+		# https://unix.stackexchange.com/questions/428018/how-to-convert-all-wav-files-in-subdirectories-to-flac
 
     elif [[ "$TRGT_FORMAT" == flac ]]
     then
